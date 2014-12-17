@@ -1,0 +1,10 @@
+<html>
+<body>
+{loop type="customer" name="custinfo" id=$customer_id current=0}
+<p>Hello {$FIRSTNAME} {$LASTNAME},</p>
+{/loop}
+<p>Your registration on {config key="store_name"} is now complete.</p>
+<p>Please <a href="{url path="/login"}">click here</a> to connect to your account.</p>
+<p>See you soon at <a href="{navigate to="index"}">{config key="store_name"}</a> !</p>
+</body>
+</html>

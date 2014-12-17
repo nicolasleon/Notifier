@@ -4,13 +4,8 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
 
-
-    <forms>
-        <form name="notifier.config" class="Notifier\Form\NotifierConfig"/>
-    </forms>
-
     <services>
-        <service id="notifier.customer_registration" class="Notifier\EventListeners\CustomerAccounCreationListener">
+        <service id="notifier.customer_registration" class="Notifier\EventListeners\CustomerAccounCreationListener" scope="request">
             <argument type="service" id="mailer"/>
             <tag name="kernel.event_subscriber"/>
         </service>

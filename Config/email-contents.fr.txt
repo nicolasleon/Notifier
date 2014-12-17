@@ -1,0 +1,7 @@
+{loop type="customer" name="custinfo" id=$customer_id current=0}Bonjour {$FIRSTNAME} {$LASTNAME},{/loop}
+
+Votre inscription sur {config key="store_name"} à bien été prise en compte.
+
+Vous pouvez accéder à votre espace client à cette adresse : {url path="/login"}
+
+A bientôt sur {config key="store_name"} !
