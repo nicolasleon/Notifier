@@ -1,0 +1,7 @@
+{loop type="customer" name="custinfo" id=$customer_id current=0}Hello {$FIRSTNAME} {$LASTNAME},{/loop}
+
+Your registration at {config key="store_name"} is now complete.
+
+Your customer account is available at this Web address: {url path="/login"}.
+
+See you soon at {config key="store_name"} !
