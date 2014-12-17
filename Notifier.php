@@ -42,4 +42,12 @@ class Notifier extends BaseModule
                 ->save();
         }
     }
+
+    public function destroy(ConnectionInterface $con = null, $deleteModuleData = false)
+    {
+        // Delete message if required
+        if ($deleteModuleData) {
+            MessageQuery::create()->findOneByName(self::EMAIL_MESSAGE_NAME)->delete();
+        }
+    }
 }
