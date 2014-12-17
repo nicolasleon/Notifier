@@ -21,7 +21,7 @@ Next, go to your Thelia admin panel and activate the module.
 
 
 
-# Module Mode Maintenance pour Thelia 2 (fr_FR)
+# Module Notifier pour Thelia 2 (fr_FR)
 
 Ce module envoie un email de confirmation d'inscription au client à la création du compte (ainsi qu'une copie à l'adresse email renseignée dans la configuration des informations de la boutique)
 
